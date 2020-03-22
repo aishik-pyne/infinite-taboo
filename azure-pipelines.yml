@@ -20,6 +20,13 @@ steps:
     npm run build
   displayName: 'npm install and build'
   workingDirectory: TabooWebapp/
-
-- publish: TabooWebapp/dist/
-  artifact: TabooWebappBuild
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: 'TabooWebapp/dist/'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
+    
+- publish: $(Build.ArtifactStagingDirectory)
+  artifact: TabooWebappArtifact
