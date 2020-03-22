@@ -20,3 +20,6 @@ steps:
     npm run build
   displayName: 'npm install and build'
   workingDirectory: TabooWebapp/
+
+- publish: TabooWebapp/dist/
+  artifact: TabooWebappBuild
