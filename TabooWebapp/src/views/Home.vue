@@ -51,7 +51,7 @@
           <b-field>
             <b-slider
               size="is-large"
-              :min="1"
+              :min="30"
               :max="120"
               :step="15"
               v-model="time"
