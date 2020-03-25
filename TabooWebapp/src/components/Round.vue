@@ -82,7 +82,10 @@ export default {
       clockTickMs: 200,
       timeElapsed: 0,
       roundScore: 0,
-      word: getWord()
+      word: {
+        guessWord: "",
+        tabooWords: []
+      }
     };
   },
   computed: {
@@ -103,14 +106,13 @@ export default {
     WordBox,
     ScoreBoard
   },
-  mounted() {
+  async created() {
+    this.word = await getWord();
+  },
+  async mounted() {
     this.roundScore = 0;
     this.timeElapsed = 0;
     this.timerInstance = setInterval(this.tick, this.clockTickMs);
-    console.log(this.teams);
-  },
-  beforeDestroy() {
-    console.log("I'm going to be desttoyed");
   },
   methods: {
     tick() {
@@ -120,17 +122,17 @@ export default {
         this.$emit("round-over", this.roundScore);
       }
     },
-    taboo() {
+    async taboo() {
       this.roundScore -= 1;
-      this.word = getWord();
+      this.word = await getWord();
     },
-    pass() {
+    async pass() {
       this.roundScore -= 1;
-      this.word = getWord();
+      this.word = await getWord();
     },
-    correct() {
+    async correct() {
       this.roundScore += 1;
-      this.word = getWord();
+      this.word = await getWord();
     }
   }
 };
