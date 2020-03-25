@@ -26,6 +26,7 @@ nupkg/
 x64/
 x86/
 build/
+publish/
 bld/
 [Bb]in/
 [Oo]bj/
