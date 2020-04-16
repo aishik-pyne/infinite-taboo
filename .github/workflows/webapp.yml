@@ -24,7 +24,7 @@ jobs:
     - name: Build
       run: npm run build
       env:
-        VUE_APP_PUBIC_PATH: "./infinite-taboo"
+        VUE_APP_PUBIC_PATH: "/infinite-taboo/"
       working-directory: TabooWebapp/
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
