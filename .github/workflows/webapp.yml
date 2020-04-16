@@ -4,10 +4,12 @@ on:
     branches: [ master ]
     paths: 
     - TabooWebapp/**
+    - .github/**
   pull_request:
     branches: [ master ]
     paths: 
     - TabooWebapp/**
+    - .github/**
 jobs:
   build:
     runs-on: ubuntu-latest
