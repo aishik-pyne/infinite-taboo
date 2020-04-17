@@ -1,0 +1,14 @@
+[
+    {
+        "guessWord": "navy",
+        "tabooWords": ["seal", "army", "blue", "army"]
+    },
+    {
+        "guessWord": "boxing",
+        "tabooWords": ["seal", "army", "blue", "army"]
+    },
+    {
+        "guessWord": "hammer",
+        "tabooWords": ["seal", "army", "blue", "army"]
+    }
+]

@@ -60,7 +60,8 @@
 <script>
 import WordBox from "@/components/WordBox";
 import ScoreBoard from "@/components/ScoreBoard";
-import { getWord } from "@/services/taboo";
+// import { getWord } from "@/services/taboo";
+import { getWord } from "@/services/index";
 export default {
   props: {
     teams: {
@@ -108,6 +109,8 @@ export default {
   },
   async created() {
     this.word = await getWord();
+    console.log(this.word);
+    
   },
   async mounted() {
     this.roundScore = 0;
