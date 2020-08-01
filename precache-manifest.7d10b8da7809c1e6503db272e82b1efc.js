@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c320abf754d437aa20a1",
+    "revision": "a2a9ea710b783fec1747",
     "url": "/infinite-taboo/css/app.5b9d50c6.css"
   },
   {
@@ -8,12 +8,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/infinite-taboo/data/taboo_1.json"
   },
   {
-    "revision": "9c450faaa2e8bfbefde538a0200502d7",
+    "revision": "dd985ee267377999811a2762e7fa02be",
     "url": "/infinite-taboo/index.html"
   },
   {
-    "revision": "c320abf754d437aa20a1",
-    "url": "/infinite-taboo/js/app.c899ace0.js"
+    "revision": "a2a9ea710b783fec1747",
+    "url": "/infinite-taboo/js/app.283fa690.js"
   },
   {
     "revision": "1047d14acfc9515bfa10",
