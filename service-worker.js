@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/infinite-taboo/precache-manifest.7d10b8da7809c1e6503db272e82b1efc.js"
+  "/infinite-taboo/precache-manifest.a91ca8ddbd34aee1a702d9d7cb371b96.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "InfiniteTaboo"});
